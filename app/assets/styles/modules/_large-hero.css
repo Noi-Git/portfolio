@@ -1,0 +1,38 @@
+.large-hero {
+  position: relative;
+  height: 50vw;
+  background-color: $hero-background-color;
+  border-top: solid 2.6rem $hero-line-color;
+  border-bottom: solid 1.2rem $hero-line-color;
+
+  &__text-content {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 100%;
+    color: $hero-text-color;
+  }
+
+  &__image {
+    position: absolute;
+    top: 14%;
+    left: 55%;
+    width: 100%;
+  
+  }
+
+  &__title {
+    font-family: 'Elsie Swash Caps', cursive;
+    font-size: 6.1rem;
+    font-weight: 400;
+    letter-spacing: .6rem;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    margin-top: -2.2rem;
+  }
+}
