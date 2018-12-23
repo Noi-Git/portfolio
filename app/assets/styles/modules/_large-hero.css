@@ -1,38 +1,65 @@
 .large-hero {
   position: relative;
-  height: 50vw;
+  height: 100vh;
   background-color: $hero-background-color;
-  border-top: solid 2.6rem $hero-line-color;
-  border-bottom: solid 1.2rem $hero-line-color;
+
+  @mixin atSmall {
+    height: 65vh;
+    border-top: solid 2.6rem $hero-line-color;
+    border-bottom: solid 1.2rem $hero-line-color;
+  }
 
   &__text-content {
     position: absolute;
-    top: 40%;
-    left: 15%;
+    top: 75%;
+    left: 0;
     width: 100%;
     color: $hero-text-color;
+    text-align: center;
+
+    @mixin atSmall {
+      top: 40%;
+      left: 15%;
+      text-align: left;
+    }
   }
 
   &__image {
     position: absolute;
     top: 14%;
-    left: 55%;
-    width: 100%;
-  
+      left: 55%;
+      width: 30%;
   }
 
   &__title {
     font-family: 'Elsie Swash Caps', cursive;
-    font-size: 6.1rem;
+    font-size: 2.7rem;
+    letter-spacing: .2rem;
     font-weight: 400;
-    letter-spacing: .6rem;
+    
     margin: 0;
+
+    @mixin atSmall {
+      font-size: 7.1rem;
+      letter-spacing: .6rem;
+    }
   }
 
   &__subtitle {
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    letter-spacing: .3rem;
-    margin-top: -2.2rem;
+    letter-spacing: .1rem;
+    
+
+    @mixin atSmall {
+      font-size: 4.4rem;
+      margin-top: -2.2rem;
+      letter-spacing: .3rem;
+    }
   }
 }
+
+/* img {
+  display: block;
+    margin: 0 auto;
+} */

@@ -2,8 +2,17 @@
 
 @import "base/_global";
 @import "base/_variables";
+@import "base/_mixins";
 
 @import "modules/_large-hero";
+@import "modules/_page-section";
+@import "modules/_typography";
+@import "modules/_wrapper";
+@import "modules/_grid";
+@import "modules/_section-title";
+@import "modules/_skills";
+@import "modules/_projects";
+@import "modules/_image-composition";
 
 
 

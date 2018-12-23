@@ -1,0 +1,12 @@
+.page-section {
+  padding: 1.8rem;
+  text-align: center;
+
+  @mixin atMedium {
+    padding: 5.5rem;
+  }
+
+  &--dark-gray {
+    background-color: $bg-dark-gray;
+  }
+}

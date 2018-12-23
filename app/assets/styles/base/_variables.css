@@ -6,3 +6,7 @@ $bg-dark-gray: #E9E9E9;
 $bg-light-gray: #F6F6F6;
 
 $text-color: #4A4A4A;
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

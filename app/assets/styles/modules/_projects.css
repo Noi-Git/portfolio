@@ -1,0 +1,75 @@
+.project-item {
+  position: relative;
+  padding-bottom: 2rem;
+
+  @mixin atSmall {
+      /* padding: 0 -20rem; */
+  }
+
+  &--left {
+      padding-right: 7rem;
+  }
+
+  &--right {
+    padding-left: 7rem;
+}
+
+  &__icon {
+      display: block;
+      margin: 0 auto;
+
+
+      @mixin atSmall {
+          position: absolute;
+          left: 0;
+      }
+  }
+
+  &__title {
+      font-size: 1.8rem;
+      margin-bottom: .8rem;
+      text-align: left;
+
+      @mixin atSmall {
+          font-size: 2.8rem;
+      }
+  }
+
+  &__details {
+    margin-bottom: .8rem;
+    text-align: left;
+
+    @mixin atSmall {
+        /* font-size: 2.8rem; */
+        /* padding: 0 2rem; */
+    }
+
+  }
+
+  &__image {
+    width: 100%;
+
+    @mixin atSmall {
+        /* font-size: 2.8rem; */
+    }
+  }
+
+  &__image-multiple {
+    width: 70%;
+
+    &--p1 {
+        left: 0;
+        top: -2rem;
+    }
+
+    &--p2 {
+        right: 0;
+        top: 2rem;
+    }
+
+    &--p3 {
+        left: 20%;
+        top: 10rem;
+    }
+  }
+}

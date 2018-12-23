@@ -18,5 +18,9 @@ body {
   color: #4A4A4A;
   padding: 3rem;
   box-sizing: border-box;
+  background-color: #F6F6F6;
 }
 
+.icon {
+  width: 8rem;
+}
