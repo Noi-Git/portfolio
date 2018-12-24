@@ -15,6 +15,14 @@ gulp.task('watch', function() {
     browserSync.reload();
   });
 
+  watch('./app/trees.html', function() {
+    browserSync.reload();
+  });
+
+  watch('./app/sushi.html', function() {
+    browserSync.reload();
+  });
+
   watch('./app/assets/styles/**/*.css', function() {
     gulp.start('cssInject');
   });

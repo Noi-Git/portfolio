@@ -1,47 +1,76 @@
+
 .large-hero {
   position: relative;
   height: 100vh;
-  background-color: $hero-background-color;
 
   @mixin atSmall {
-    height: 65vh;
-    border-top: solid 2.6rem $hero-line-color;
-    border-bottom: solid 1.2rem $hero-line-color;
+    height: 35vh;
+    border-top: solid 2.2rem $light-blue;
+    border-bottom: solid 1rem $light-blue;
+  }
+  @mixin atMedium {
+    height: 40vh;
+  }
+  @mixin atLarge {
+    height: 60vh;
+  }
+
+  
+
+  &__image {
+    position: absolute;
+    width: 80%;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+    @mixin atSmall {
+      width: 25%;
+      top: 50%;
+      left: 70%;
+    }
+    @mixin atMedium {
+      width: 28%;
+      left: 75%;
+    }
+    @mixin atLarge {
+      width: 30%;
+    }
   }
 
   &__text-content {
     position: absolute;
-    top: 75%;
-    left: 0;
-    width: 100%;
-    color: $hero-text-color;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-
+    color: $hero-text-color;
+    
     @mixin atSmall {
       top: 40%;
       left: 15%;
+      transform: translate(0%, 0%);
       text-align: left;
     }
-  }
-
-  &__image {
-    position: absolute;
-    top: 14%;
-      left: 55%;
-      width: 30%;
   }
 
   &__title {
     font-family: 'Elsie Swash Caps', cursive;
     font-size: 2.7rem;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     font-weight: 400;
-    
     margin: 0;
 
     @mixin atSmall {
+      font-size: 4.1rem;
+      letter-spacing: .3rem;
+    }
+    @mixin atMedium {
+      font-size: 5.5rem;
+    }
+    @mixin atLarge {
       font-size: 7.1rem;
-      letter-spacing: .6rem;
+      letter-spacing: .5rem;
     }
   }
 
@@ -49,17 +78,18 @@
     font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: .1rem;
-    
 
     @mixin atSmall {
-      font-size: 4.4rem;
+      font-size: 2.9rem;
       margin-top: -2.2rem;
-      letter-spacing: .3rem;
+      letter-spacing: .2rem;
+    }
+    @mixin atMedium {
+      font-size: 3.5rem;
+    }
+    @mixin atLarge {
+      font-size: 4.4rem;
+      letter-spacing: .6rem;
     }
   }
 }
-
-/* img {
-  display: block;
-    margin: 0 auto;
-} */

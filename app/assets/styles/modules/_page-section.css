@@ -3,10 +3,24 @@
   text-align: center;
 
   @mixin atMedium {
-    padding: 5.5rem;
+    padding: 4.5rem;
   }
 
   &--dark-gray {
-    background-color: $bg-dark-gray;
+    background-color: $dark-gray;
+  }
+
+  &--light-gray {
+    background-color: $light-gray;
+  }
+
+  &--light-blue {
+    background-color: $light-blue;
+  }
+
+  &--dark-blue {
+    background-color: $dark-blue;
   }
 }
+
+

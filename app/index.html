@@ -15,144 +15,140 @@
 
 </head>
 <body>
-  <div class="large-hero">
+  
+  <div class="large-hero page-section page-section--dark-blue">
+
+    <!-- <img class="large-hero__image" src="assets/images/noi-pic-large.png" alt="picture of noi smile"> -->
+    <img class="large-hero__image" srcset="assets/images/noi-pic-small.png 327w, assets/images/noi-pic-medium.png 318w,assets/images/noi-pic-large.png 437w" alt="picture of Noi smile">
     <div class="large-hero__text-content">
-      <h1 class="large-hero__title">Noi Sinnang</h1>
-      <h2 class="large-hero__subtitle">Web Developer</h2>
-    </div> 
-    <!-- <div class="large-hero__image"> -->
-      <img class="large-hero__image" src="assets/images/noi-pic-large.png" alt="picture of noi smaile">
-    <!-- </div> -->
-  </div>
-
-  <div id="skill" class="page-section page-section--dark-gray">
-    <div class="wrapper">
-      <h3 class="section-title">Skills</h3>
-
-      <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding">
-
-        <div class="row__large-4">
-          <div class="skill-item">
-              <!-- <span class="icon icon--backend skill-item__icon"></span> -->
-              <img class="icon" src="assets/images/back-end.svg" alt="back-end icon">
-              <h4 class="skill-item__title">Back-End</h4>
-              <p class="skill-itme__details">Node.js, Express.js, NPM,  body-parser, moongoDB, Google OAth, Heroku, PHP </p>
-          </div>
-        </div>
-
-        <div class="row__large-4">
-          <div class="skill-item">
-              <!-- <span class="icon icon--frontend skill-item__icon"></span> -->
-              <img class="icon" src="assets/images/front-end.svg" alt="back-end icon">
-              <h4 class="skill-item__title">Front-End</h4>
-              <p class="skill-itme__details">HTML5, CSS3, SASS, Bootstrap, CSS-Grid, Flex Box</p>
-          </div>
-        </div>
-
-        <div class="row__large-4">
-          <div class="skill-item">
-              <!-- <span class="icon icon--graphic skill-item__icon"></span> -->
-              <img class="icon" src="assets/images/graphic.svg" alt="back-end icon">
-              <h4 class="skill-item__title">Graphic</h4>
-              <p class="skill-itme__details">Sketch, Adobe Illustrator, Adobe Photoshop</p>
-          </div>
-        </div>
-
-      </div>  
+      <h1 class=" large-hero__title large-hero__title--medium">Noi Sinnang</h1>
+      <h2 class="large-hero__subtitle large-hero__subtitle--medium">Web Developer</h2>
     </div>
   </div>
 
-  <div id="project"  class="page-section">
+  <div class="skills page-section page-section--dark-gray">
+      <h3 class="section-title section-title--less-margin">Skills</h3>
+
+    <div class="row">
+
+      <div class="row__large-4">
+        <span class="skill-item">
+            <!-- <span class="icon icon--backend skill-item__icon"></span> -->
+            <img class="skill-item__icon" src="assets/images/back-end.svg" alt="back-end icon">
+            <h4 class="skill-item__title">Back-End</h4>
+            <p class="skill-item__details">Node.js, Express.js, NPM,  body-parser, moongoDB, Google OAth, Heroku, PHP, WordPress </p>
+        </span>
+      </div>
+
+      <div class="row__large-4">
+        <span class="skill-item">
+            <!-- <span class="icon icon--frontend skill-item__icon"></span> -->
+            <img class="skill-item__icon" src="assets/images/front-end.svg" alt="back-end icon">
+            <h4 class="skill-item__title">Front-End</h4>
+            <p class="skill-item__details">HTML5, CSS3, SASS, Bootstrap, CSS-Grid, Flex Box</p>
+        </span>
+      </div>
+
+      <div class="row__large-4">
+        <span class="skill-item">
+            <!-- <span class="icon icon--graphic skill-item__icon"></span> -->
+            <img class="skill-item__icon" src="assets/images/graphic.svg" alt="back-end icon">
+            <h4 class="skill-item__title">Graphic</h4>
+            <p class="skill-item__details">Sketch, Adobe Illustrator, Adobe Photoshop</p>
+        </span>
+      </div>
+    </div> <!-- row --> 
+  </div><!-- skills-->
+
+
+
+  <div class=" projectpage-section page-section--light-gray">
     <div class="wrapper">
       <h3 class="section-title">Projects</h3>
 
       <div class="row row--gutters-project">
-        <div class="row__medium-text">
-          <div class="project-item project-item--left">
+        <!-- <div class="row__large-10"> -->
+          <div class="row__large-10__image--right">
+            <a href="http://www.lexicon.space/" target="_blank">
+            <img class="project-item__image"src="assets/images/lexicon-large.png" alt="image of Lexicon website"></a>
+          </div>
+          <div class="row__large-10__text--left">
             <h4 class="project-item__title">Lexicon</h4>
               <p class="project-item__details">Something to say about why do I create this project. For example, learn RESTful Api using Node.js and Express libraris, learn to create a secure user register and login platform and validate user identity using Google OAth, learn to connect application to MongoDB database, learn to deploy the app through Heroku with AWS and connect mogoDB database through mLap, learn to connect the app through personal domain</p>
+        </div>
+      <!-- </div> -->
+    </div>
+
+    <div class="row row--gutters-project">
+      <!-- <div class="row__large-10"> -->
+        <div class="row__large-10__image--left">
+          <a href="https://noi-git.github.io/travel/" target="_blank">
+            <img class="project-item__image" src="assets/images/travel-large.png" alt="image of travel website"></a>
+        </div>
+        <div class="row__large-10__text--right">
+          <h4 class="project-item__title">Travel</h4>
+          <p class="project-item__details">Something to say about why do I create this project. For example, learn RESTful Api using Node.js and Express libraris, learn to create a secure user register and login platform and validate user identity using Google OAth, learn to connect application to MongoDB database, learn to deploy the app through Heroku with AWS and connect mogoDB database through mLap, learn to connect the app through personal domain</p>
+        </div>
+      <!-- </div> -->
+  </div>
+
+  <div class="row row--gutters-project">
+      <!-- <div class="row__large-10"> -->
+        <div class="composition row__large-10__image--right">
+            <a href="http://noisinnang.space/code_school/" target="_blank">
+            <img class="composition__photo composition__photo--p1" src="assets/images/code-school-large.png" alt="image of code school website"></a>
+          <a href="http://noisinnang.space/tranquil_relaxation/" target="_blank">
+            <img class="composition__photo composition__photo--p2" src="assets/images/tranquil-large.png" alt="image of code school website"></a>
+          <a href="http://noisinnang.space/me_&_my_works/" target="_blank">
+            <img class="composition__photo composition__photo--p3" src="assets/images/my-work-large.png" alt="image of code school website"></a>
+        </div>
+        <div class="row__large-10__text--left">
+          <h4 class="project-item__title">Multiple Bootstrap Websites</h4>
+          <p class="project-item__details">Something to say about why do I create this project. For example, learn RESTful Api using Node.js and Express libraris, learn to create a secure user register and login platform and validate user identity using Google OAth, learn to connect application to MongoDB database, learn to deploy the app through Heroku with AWS and connect mogoDB database through mLap, learn to connect the app through personal domain</p>
+        </div>
+      <!-- </div> -->
+    </div>
+
+    <div class="row row--gutters-project">
+      <!-- <div class="row__large-10"> -->
+        <div class="composition-1 row__large-10__image--left">
+          <div class="composition-1">
+            <a href="trees.html" target="_blank">
+              <img class="composition-1__photo composition-1__photo--p1" src="assets/images/trees-large.png" alt="image of animated trees"> </a>
+            <a href="sushi.html" target="_blank"> 
+            <img class="composition-1__photo-small composition-1__photo-small--p2" src="assets/images/sushi-large.png" alt="image of animated sushi"> </a>
           </div>
         </div>
-        <div class="row__medium-image">
-          <div class="project-item">
-            <img class="project-item__image"src="assets/images/lexicon-large.png" alt="image of Lexicon website">
-          </div>
+        <div class="row__large-10__text--right">
+          <h4 class="project-item__title">Graphic </h4>
+          <p class="project-item__details">Animated .svg animation using CSS3 properties </p><br><br><br><br><br><br><br><br><br>
         </div>
-      </div>
+      <!-- </div> -->
+    </div>
 
-      <div class="row row--gutters-project">
-          <div class="row__medium-image">
-            <div class="project-item">
-              <img class="project-item__image" src="assets/images/travel-large.png" alt="image of travel website">
-            </div>
-          </div>
-          <div class="row__medium-text">
-            <div class="project-item project-item--right">
-              <h4 class="project-item__title">Travel</h4>
-              <p class="project-item__details">Something to say about why do I create this project. For example, learn RESTful Api using Node.js and Express libraris, learn to create a secure user register and login platform and validate user identity using Google OAth, learn to connect application to MongoDB database, learn to deploy the app through Heroku with AWS and connect mogoDB database through mLap, learn to connect the app through personal domain</p>
-            </div>
-          </div>
         </div>
-
-        <div class="row row--gutters-project">
-          <div class="row__medium-text">
-            <div class="project-item project-item--left">
-              <h4 class="project-item__title">Multiple Bootstrap Websites</h4>
-              <p class="project-item__details">Something to say about why do I create this project. For example, learn RESTful Api using Node.js and Express libraris, learn to create a secure user register and login platform and validate user identity using Google OAth, learn to connect application to MongoDB database, learn to deploy the app through Heroku with AWS and connect mogoDB database through mLap, learn to connect the app through personal domain</p>
-            </div>
-          </div>
-
-          <div class="row__medium-image">
-            <div class="composition">
-              <img class="composition__photo composition__photo--p1" src="assets/images/code-school-large.png" alt="image of code school website">
-              <img class="composition__photo composition__photo--p2" src="assets/images/tranquil-large.png" alt="image of code school website">
-              <img class="composition__photo composition__photo--p3" src="assets/images/my-work-large.png" alt="image of code school website">
-            </div>
-          </div>
-        </div>
-
-        <div class="row row--gutters-project">
-            <div class="row__medium-6">
-                <div class="composition-1">
-                    <img class="composition-1__photo composition-1__photo--p1" src="assets/images/trees-large.png" alt="image of code school website">
-                    <p class="project-item__details">Something to say about why do I create this project. For example, learn RESTful Api using Node.js and Express libraris, learn to create a secure user ect mogoDB database through mLap, learn to connect the app through personal domain</p>
-                   
-                </div>
-            </div>
-            <div class="row__medium-6">
-              <div class="project-item project-item--right">
-                  <img class="composition-1__photo composition-1__photo--p2" src="assets/images/sushi-large.png" alt="image of code school website"> 
-                <h4 class="project-item__title">Travel</h4>
-                <p class="project-item__details">Something to say about why do I create this project. Forrough Heroku with AWS and connect mogoDB database through mLap, learn to connect the app through personal domaething to say about why do I create this project. Forrough Heroku with AWS and connect mogoDB database through mLap, learn to connect the app through personal in</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-          
-  
-
-
     </div> <!-- wrapper -->
   </div>
 
-  <section class="about page-section">
+  <section class="about page-section page-section--light-blue">
     <div class="wrapper">
-      <h3 class="about__header">About Me</h3>
-      <p class="about__details">Something to say about myself</p>
-      <a href="#">sinnang.noi@gmail.com</a>
-      <a href="#">Linkedin</a>
+      <div class="row__medium-4">
+        <h3 class="section-title about about__header">About Me</h3>
+    </div>
+
+    <div class="row__medium-8">
+        <p class="about about__details">Something to say about myself nd Express libraris, learn to create a secure user register and login platform and validate user identity using Google OAth, learn to connect application to MongoDB database, learn to deploy the app through Heroku with AWS and connect mogoDB database through mL</p>
+      <p class="about about__details">
+      <a class="about__link" href="https://www.linkedin.com/in/noi-sinnang/" target="_blank">Linkedin</a>
+    </p>
+    </div>
     </div>
   </section>
 
-  <section class="footer">
-    <p class="copyright">Copyright</p>
+  <section class="footer footer--dark-blue">
+      <p>Copyright &copy; <script> document.write(new Date().getFullYear());</script> </p>
+      <p>Created by: Noi Sinnang</p>
   </section>
-
   
   
 </body>

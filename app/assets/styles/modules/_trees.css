@@ -1,0 +1,230 @@
+#trees {
+  margin-top: 1%;
+	margin-left: 22%;
+	margin-right: auto;
+	width: 140%;
+}
+
+ 
+ #tree1 .p-tree1,
+ #tree14 .p-tree14 {
+   fill: #e5d225;
+   stroke-width: 1px;
+   stroke-dasharray: 3500;
+   stroke-dashoffset: 3500;
+   animation-delay: 60000s;
+   animation: 20s tree1-outline forwards;
+ }
+ 
+ @keyframes tree1-outline {
+   0% {
+     
+   }
+   40% {
+     stroke-dashoffset: 3500;
+     fill: none;
+   }
+   80% {
+     stroke-dashoffset: 0;
+     fill: none;
+     storke: #e5d225;
+     stroke-width: 1px;
+   }
+   100%{
+     transition: fill 0.02s linear ease-in;
+     storke: #e5d225;
+     stroke-width: 1px;
+   }
+ }
+ 
+ #tree2 .p-tree2 {
+   fill: #823557;
+   stroke-width: 1px;
+   stroke-dasharray: 1500;
+   stroke-dashoffset: 1500;
+   animation-delay: 120000s;
+   animation: 15s tree2-outline forwards;
+ }
+ 
+ @keyframes tree2-outline {
+   0% {
+     stroke-dashoffset: 1500;
+     fill: none;
+   }
+   80% {
+     stroke-dashoffset: 0;
+     fill: none;
+   }
+   100%{
+     transition: fill 0.01s linear ease-in;  
+   }
+ }
+ 
+ #tree3 .p-tree3  {
+   fill: #876f03;
+   stroke-width: 1px;
+   stroke-dasharray: 4000;
+   stroke-dashoffset: 4000;
+   animation-delay: 120000s;
+   animation: 22s tree3-outline forwards;
+ }
+ 
+ @keyframes tree3-outline {
+   0% {
+     stroke-dashoffset: 4000;
+     fill: none;
+   }
+   80% {
+     stroke-dashoffset: 0;
+     fill: none;
+     storke: #876f03;
+     stroke-width: 1px;
+   }
+   100%{
+     transition: fill 0.02s linear ease-in;
+     storke: #876f03;
+     stroke-width: 1px;
+   }
+ }
+ 
+ #tree4 .p-tree4,
+ #tree12 .p-tree12,
+ #tree15 .p-tree15{
+   fill: #d34b44;
+   stroke-width: 1px;
+   stroke-dasharray: 3500;
+   stroke-dashoffset: 3500;
+   animation-delay: 12000s;
+   animation: 20s tree4-outline forwards;
+ }
+ 
+ @keyframes tree4-outline {
+   0% {
+     stroke-dashoffset: 3500;
+     fill: none;
+   }
+   80% {
+     stroke-dashoffset: 0;
+     fill: none;
+     storke: #d34b44;
+     stroke-width: 1px;
+   }
+   100%{
+     transition: fill 0.02s linear ease-in;
+     storke: #d34b44;
+     stroke-width: 1px;
+   }
+ }
+ 
+ #tree5 .p-tree5  {
+   fill: #afa349;
+   stroke-width: 1px;
+   stroke-dasharray: 4500;
+   stroke-dashoffset: 4500;
+   animation-delay: 12000s;
+   animation: 10s tree5-outline forwards;
+ }
+ 
+ @keyframes tree5-outline {
+   0% {
+  
+   }
+   30% {
+     stroke-dashoffset: 4500;
+     fill: none;
+   }
+   80% {
+     stroke-dashoffset: 0;
+     fill: none;
+     storke: #afa349;
+     stroke-width: 1px;
+   }
+   100%{
+     transition: fill 0.02s linear ease-in;
+     storke: #876f03;
+     stroke-width: 1px;
+   }
+ }
+ 
+ #tree8 .p-tree8,
+ #tree9 .p-tree9,
+ #tree11 .p-tree11{
+   fill: #939598;
+   stroke-width: 1px;
+   stroke-dasharray: 3500;
+   stroke-dashoffset: 3500;
+     animation-delay: 3000s;
+   animation: 10s tree8-outline forwards;
+ }
+ 
+ @keyframes tree8-outline {
+     0% {
+  
+   }
+   50% {
+     stroke-dashoffset: 3500;
+     fill: none;
+   }
+   80% {
+     stroke-dashoffset: 0;
+     fill: none;
+     storke: #939598;
+     stroke-width: 1px;
+   }
+   100%{
+     transition: fill 0.02s linear ease-in;
+     storke: #939598;
+     stroke-width: 1px;
+   }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ #name text {
+   animation: 5s nameFade;
+ }
+ 
+ @keyframes nameFade {
+   0% {
+ 
+     opacity: 0;
+   }
+ 
+   100% {
+     opacity: 1;
+   }
+ }
+ 
+ #frontEndWeb .frontEnd {
+   animation: 8s frontEndFade;
+ }
+ 
+ @keyframes frontEndFade {
+   0% {
+ 
+     opacity: 0;
+   }
+ 
+   100% {
+     opacity: 1;
+   }
+ }
+ 
+ #portfolio text {
+   animation: 20s portfolioFade;
+ }
+ 
+ @keyframes portfolioFade {
+   0% {
+ 
+     opacity: 0;
+   }
+ 
+   100% {
+     opacity: 1;
+   }
+ }
+ 

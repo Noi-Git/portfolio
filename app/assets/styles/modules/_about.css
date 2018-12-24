@@ -1,0 +1,23 @@
+.about {
+
+  &__header {
+    padding-bottom: 6rem ;
+  }
+
+  &__details {
+    text-align: left;
+  }
+
+  &__link {
+    text-align: left;
+    display: inline-block;
+    padding-top: 2rem;
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover{ 
+      transform: scale(1);
+      color: $dark-blue;
+  }
+  }
+}

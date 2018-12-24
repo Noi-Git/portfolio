@@ -1,18 +1,27 @@
 .project-item {
   position: relative;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin: 0 auto;
 
-  @mixin atSmall {
-      /* padding: 0 -20rem; */
+   &__image {
+    width: 100%;
+    padding-left: 1rem;
+    display: block;
+    margin: 0 auto;
+
+    @mixin atSmall {
+        width: 80%;
+    }
+    @mixin atMedium {
+        width: 100%;
+    }
   }
 
-  &--left {
-      padding-right: 7rem;
+  &__content {
+      padding-bottom: 10rem;
   }
-
-  &--right {
-    padding-left: 7rem;
 }
+  
 
   &__icon {
       display: block;
@@ -27,7 +36,6 @@
 
   &__title {
       font-size: 1.8rem;
-      margin-bottom: .8rem;
       text-align: left;
 
       @mixin atSmall {
@@ -43,33 +51,6 @@
         /* font-size: 2.8rem; */
         /* padding: 0 2rem; */
     }
-
   }
 
-  &__image {
-    width: 100%;
 
-    @mixin atSmall {
-        /* font-size: 2.8rem; */
-    }
-  }
-
-  &__image-multiple {
-    width: 70%;
-
-    &--p1 {
-        left: 0;
-        top: -2rem;
-    }
-
-    &--p2 {
-        right: 0;
-        top: 2rem;
-    }
-
-    &--p3 {
-        left: 20%;
-        top: 10rem;
-    }
-  }
-}

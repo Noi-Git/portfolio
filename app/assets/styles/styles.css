@@ -13,6 +13,11 @@
 @import "modules/_skills";
 @import "modules/_projects";
 @import "modules/_image-composition";
+@import "modules/_about";
+@import "modules/_footer";
+
+@import "modules/_sushi";
+@import "modules/_trees";
 
 
 

@@ -1,9 +1,10 @@
 .composition {
   position: relative;
+  padding-bottom: 25rem;
 
   &__photo {
       width: 65%;
-      box-shadow: 0 1rem 1rem rgba(68, 68, 68, 0.6);
+      box-shadow: $box-shadow;
       border-radius: 2px;
       position: absolute;
       z-index: 10;
@@ -13,22 +14,66 @@
           left: 0;
           top: -2rem;
       }
-
       &--p2 {
           right: 0;
           top: 2rem;
       }
-
       &--p3 {
-          left: 20%;
+          left: 2rem;
           top: 10rem;
       }
 
       &:hover {
           transform: scale(1.05) translateY(-.5rem);
-          box-shadow: 0 1rem 1rem rgba(68, 68, 68, 0.6);
+          box-shadow: $box-shadow;
           z-index: 20;
       }
+
+      @mixin atSmall {
+        width: 30%;
+        &--p1 {
+            left: 0%;
+            top: 0;
+        }
+        &--p2 {
+            right: 0;
+            top: 0;
+        }
+        &--p3 {
+            left: 35%;
+            top: 0rem;
+        }
+    }
+    @mixin atMedium {
+        width: 40%;
+        &--p1 {
+            left: 0;
+            top: 0;
+        }
+        &--p2 {
+            right: 0;
+            top: 0;
+        }
+        &--p3 {
+            left: 20rem;
+            top: 3rem;
+        }
+    }
+    @mixin atLarge {
+        width: 65%;
+        &--p1 {
+            left: 0;
+            top: -2rem;
+        }
+        &--p2 {
+            right: 0;
+            top: 2rem;
+        }
+        &--p3 {
+            left: 2rem;
+            top: 10rem;
+        }
+    }
   }
 
   &:hover &__photo:not(:hover) { 
@@ -36,36 +81,86 @@
   }
 }
 
-
-
 .composition-1 {
   position: relative;
+  padding-bottom: 10rem;
 
   &__photo {
-      width: 75%;
-      height: auto;
-      box-shadow: 0 1rem 1rem rgba(68, 68, 68, 0.6);
-      border-radius: 2px;
+      width: 80%;
+      /* height: auto; */
+      box-shadow: $box-shadow;
+      border-radius: 1px;
       position: absolute;
       z-index: 10;
       transition: all .2s;
 
       &--p1 {
-          left: 10rem;
+          left: .5rem;
       }
-
-      &--p2 {
-          right: 1rem;
-      }
-
       &:hover {
           transform: scale(1.05) translateY(-.5rem);
-          box-shadow: 0 1rem 1rem rgba(68, 68, 68, 0.6);
+          box-shadow: $box-shadow;
           z-index: 20;
       }
+        @mixin atSmall {
+            width: 40%;
+ 
+        }
+        @mixin atMedium {
+            width: 42%;
+    
+        }
+        @mixin atLarge {
+            width: 65%;
+        }
   }
-
   &:hover &__photo:not(:hover) { 
       transform: scale(0.95);
   }
+
+  &__photo-small {
+    width: 50%;
+    height: auto;
+    box-shadow: $box-shadow;
+    border-radius: 1px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+
+    &--p2 {
+        right: 1rem;
+        top: 12rem;
+    }
+
+    &:hover {
+        transform: scale(1.05) translateY(-.5rem);
+        box-shadow: $box-shadow;
+        z-index: 20;
+    }
+    @mixin atSmall {
+        width: 40%;
+        &--p2 {
+            right: 1rem;
+            top: 5rem;
+        }
+    }
+        @mixin atMedium {
+            width: 40%;
+            &--p2 {
+                right: 1rem;
+                top: 5rem;
+            }
+        }
+        @mixin atLarge {
+            width: 50%;
+            &--p2 {
+                right: 1rem;
+                top: 12rem;
+            }
+    }
+}
+
+&:hover &__photo-small:not(:hover) { 
+    transform: scale(0.95);
+}
 }
