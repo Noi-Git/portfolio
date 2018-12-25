@@ -13,6 +13,10 @@
         width: 80%;
     }
     @mixin atMedium {
+        width: 60%;
+    }
+
+    @mixin atMedium {
         width: 100%;
     }
   }
