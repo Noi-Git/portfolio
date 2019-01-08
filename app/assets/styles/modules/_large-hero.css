@@ -15,7 +15,13 @@
     height: 60vh;
   }
 
-  
+  /* &__container {
+    overflow: hidden;
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 960px;
+    margin: 0 auto;
+  } */
 
   &__image {
     position: absolute;
@@ -34,7 +40,11 @@
       left: 75%;
     }
     @mixin atLarge {
-      width: 30%;
+      max-width: 30%;
+    }
+
+    @mixin atLarger {
+      width: 25%;
     }
   }
 

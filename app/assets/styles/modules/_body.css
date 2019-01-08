@@ -1,0 +1,12 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  @mixin atSmall {
+    padding: 1.5rem;
+  }
+  @mixin atMedium {
+    padding: 3rem;
+  }
+}

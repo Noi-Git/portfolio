@@ -1,23 +1,54 @@
 .about {
 
-  &__header {
-    padding-bottom: 6rem ;
-  }
+  &__title {
+    font-size: 2.55rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @mixin atSmall {
+      font-size: 3rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    @mixin atMedium {
+      margin-top: -.5rem;
+    }
+}
 
   &__details {
-    text-align: left;
+    text-align: center;
+    padding-bottom: .6rem;
+
+    @mixin atSmall {
+      text-align: left;
+      padding-bottom: .2rem;
   }
+}
 
   &__link {
-    text-align: left;
+    font-size: 1.8rem;
+    text-align: center;
     display: inline-block;
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-decoration: none;
     color: $text-color;
 
     &:hover{ 
       transform: scale(1);
       color: $dark-blue;
+    }
+
+    @mixin atSmall {
+      text-align: left;
+      padding-top: 1.2rem;
+    }
+
+    
   }
+
+  &__icon {
+    width: 1.2rem;
   }
 }

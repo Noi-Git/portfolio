@@ -6,6 +6,17 @@
 
     &--t-padding {
         padding-top: 3rem;
+        @mixin atLarge {
+            padding-top: 0rem;
+        }
+    }
+
+    &--b-padding {
+        padding-bottom: 0rem;
+
+        @mixin atSmall {
+            padding-top: 5rem;
+        }
     }
 
     &--gutters {
@@ -130,22 +141,40 @@
 
             &__image--right {
                 float: right;
-                width: 40%;
+                width: 36%;
             }
 
             &__text--left {
                 float: left;
-                width: 57%;
+                width: 60%;
             }
 
             &__image--left {
                 float: left;
-                width: 40%;
+                width: 36%;
             }
 
             &__text--right {
                 float: right;
-                width: 57%;
+                width: 60%;
+            }
+        }
+
+        
+
+        &__about {
+            float: none;
+            width: 70%;
+            margin: 0 auto;
+
+            &--title {
+                float: left;
+                width: 25%;
+            }
+
+            &--details {
+                float: left;
+                width: 65%
             }
         }
     } 

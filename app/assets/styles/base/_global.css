@@ -16,11 +16,17 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #4A4A4A;
-  padding: 3rem;
-  box-sizing: border-box;
-  background-color: #ffffff;
 }
 
 .icon {
   width: 8rem;
+}
+
+ul {
+
+  li {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+  }
 }

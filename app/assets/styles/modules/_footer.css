@@ -1,6 +1,7 @@
 .footer {
   text-align: center;
   padding: .5rem 0;
+  font-size: 1.4rem;
 
   &--dark-blue {
     background-color: $dark-blue;

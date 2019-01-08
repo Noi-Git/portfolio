@@ -30,29 +30,29 @@
       }
 
       @mixin atSmall {
-        width: 30%;
-        &--p1 {
+        width: 50%;
+        /* &--p1 {
             left: 0%;
             top: 0;
-        }
+        } */
         &--p2 {
             right: 0;
-            top: 0;
+            top: 0rem;
         }
         &--p3 {
             left: 35%;
-            top: 0rem;
+            top: 8rem;
         }
     }
     @mixin atMedium {
         width: 40%;
         &--p1 {
             left: 0;
-            top: 0;
+            top: -5rem;
         }
         &--p2 {
             right: 0;
-            top: 0;
+            top: -5rem;
         }
         &--p3 {
             left: 20rem;
@@ -103,7 +103,7 @@
           z-index: 20;
       }
         @mixin atSmall {
-            width: 40%;
+            width: 60%;
  
         }
         @mixin atMedium {
