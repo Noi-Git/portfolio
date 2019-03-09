@@ -5,8 +5,10 @@
 
   @mixin atSmall {
     height: 35vh;
-    border-top: solid 2.2rem $light-blue;
+    /* border-top: solid 2.2rem #C5D1D3; */
+    /* border-top: solid 2.2rem $light-blue; */
     border-bottom: solid 1rem $light-blue;
+    /* border-bottom: solid 1rem #C5D1D3; */
   }
   @mixin atMedium {
     height: 40vh;
@@ -65,7 +67,7 @@
   }
 
   &__title {
-    font-family: 'Elsie Swash Caps', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 2.7rem;
     letter-spacing: .1rem;
     font-weight: 400;
@@ -95,10 +97,10 @@
       letter-spacing: .2rem;
     }
     @mixin atMedium {
-      font-size: 3.5rem;
+      font-size: 3.2rem;
     }
     @mixin atLarge {
-      font-size: 4.4rem;
+      font-size: 4.0rem;
       letter-spacing: .6rem;
     }
   }

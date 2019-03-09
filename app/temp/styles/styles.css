@@ -511,8 +511,10 @@ body {
 
 .large-hero {
     height: 35vh;
-    border-top: solid 2.2rem #BEE6EA;
+    /* border-top: solid 2.2rem #C5D1D3; */
+    /* border-top: solid 2.2rem $light-blue; */
     border-bottom: solid 1rem #BEE6EA
+    /* border-bottom: solid 1rem #C5D1D3; */
 }
   }
 
@@ -600,7 +602,7 @@ body {
   }
 
 .large-hero__title {
-    font-family: 'Elsie Swash Caps', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 2.7rem;
     letter-spacing: .1rem;
     font-weight: 400;
@@ -648,14 +650,14 @@ body {
 @media (min-width: 800px) {
 
 .large-hero__subtitle {
-      font-size: 3.5rem
+      font-size: 3.2rem
   }
   }
 
 @media (min-width: 1010px) {
 
 .large-hero__subtitle {
-      font-size: 4.4rem;
+      font-size: 4.0rem;
       letter-spacing: .6rem
   }
   }
@@ -920,7 +922,7 @@ h4 {
 
             .row__large-10__text--right {
                 float: right;
-                width: 60%;
+                width: 56%;
             }
 
         
@@ -1117,40 +1119,40 @@ h4 {
     }
 
 .project-item__title {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: left;
     }
 
 @media (min-width: 530px) {
 
 .project-item__title {
-            font-size: 2.7rem
+            font-size: 2.5rem
     }
   }
 
 .project-item__subtitle {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-align: left;
         font-weight: 700;
-        padding-left: 2rem;
+        padding-left: 0;
     }
 
 @media (min-width: 530px) {
 
 .project-item__subtitle {
-            font-size: 1.9rem
+            font-size: 1.7rem
     }
   }
 
 .project-item__subtitle--details {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         font-weight: 700;
         }
 
 @media (min-width: 530px) {
 
 .project-item__subtitle--details {
-                padding-left: 4rem
+                padding-left: 1.8rem
         }
   }
 
@@ -1422,6 +1424,17 @@ h4 {
 }
   }
 
+.about__detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
 .about__details {
     text-align: center;
     padding-bottom: .6rem;
@@ -1436,7 +1449,7 @@ h4 {
   }
 
 .about__link {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     text-align: center;
     display: inline-block;
     padding-top: 1rem;

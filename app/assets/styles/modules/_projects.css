@@ -31,31 +31,31 @@
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: left;
   
         @mixin atSmall {
-            font-size: 2.7rem;
+            font-size: 2.5rem;
         }
     }
 
     &__subtitle {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-align: left;
         font-weight: 700;
-        padding-left: 2rem;
+        padding-left: 0;
   
         @mixin atSmall {
-            font-size: 1.9rem;
+            font-size: 1.7rem;
         }
 
         &--details {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         font-weight: 700;
         
 
             @mixin atSmall {
-                padding-left: 4rem;
+                padding-left: 1.8rem;
             }
         }
     }

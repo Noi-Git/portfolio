@@ -17,6 +17,12 @@
     }
 }
 
+  &__detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &__details {
     text-align: center;
     padding-bottom: .6rem;
@@ -28,7 +34,7 @@
 }
 
   &__link {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     text-align: center;
     display: inline-block;
     padding-top: 1rem;

@@ -10,11 +10,13 @@
   
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <link href="https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900|Nunito:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Nunito:400,700,800" rel="stylesheet">
 
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css">
   <!-- endbuild -->
+
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
 
 </head>
 <body>
@@ -42,7 +44,7 @@
             <!-- <span class="icon icon--back-end skill-item__icon"></span> -->
             <img class="skill-item__icon" src="assets/images/icons/back-end.svg" alt="back-end icon">
             <h4 class="skill-item__title">Back-End</h4>
-            <p class="skill-item__details">Node.js, Express.js, REST APIs, NPM, MongoDB, Google OAuth, Heroku, PHP, WordPress, Drupal8 </p>
+            <p class="skill-item__details">Node.js, Express.js, REST APIs, NPM, MongoDB, SQL, Google OAuth, Heroku, PHP, WordPress </p>
         </span>
       </div>
 
@@ -74,7 +76,7 @@
 
       <div class="row row--gutters-project">
         <!-- <div class="row__large-10"> -->
-          <div class="row__large-10__image--right">
+          <div class="row__large-10__image--left">
             <a href="http://www.lexicon.space/" target="_blank">
             <img class="project-item__image"
             srcset="
@@ -83,7 +85,7 @@
             assets/images/lexicon-large.png 558w, assets/images/lexicon-large-hi-dpi.png 1116w" 
             alt="image of Lexicon website"></a>
           </div>
-          <div class="project-item__content row__large-10__text--left row--t-padding">
+          <div class="project-item__content row__large-10__text--right row--t-padding">
             <h4 class="project-item__title">Lexicon</h4>
               <p class="project-item__details row__b-margin-until-medium">Jot down new ideas and modify them as you wish.
                 <ul>
@@ -96,8 +98,8 @@
                       <li><span class="project-item__subtitle--details">Build:</span> Node.js and Express.js</li>
                       <li><span class="project-item__subtitle--details">Architecture:</span> 
                         REST APIs for sending HTTP requests to MongoDB database</li>
-                      <li><span class="project-item__subtitle--details">login and register:</span> 
-                        Passportjs Local Stategy for store user's credential</li>
+                      <li><span class="project-item__subtitle--details">Login and Register:</span> 
+                        Passportjs Local Stategy to store user's credential</li>
                       <li><span class="project-item__subtitle--details">Encrypt:</span> 
                         Use bcryptjs to encrypt and validate user's password</li>
                       <li><span class="project-item__subtitle--details">Deploy:</span> 
@@ -111,19 +113,24 @@
 
     <div class="row row--gutters-project">
       <!-- <div class="row__large-10"> -->
-        <div class="row__large-10__image--left">
+        <div class="composition row__large-10__image--left">
           <a href="https://noi-git.github.io/travel/" target="_blank">
-            <img class="project-item__image" 
-            srcset=
-            "assets/images/travel-small.png 322w, assets/images/travel-small-hi-dpi.png 644w,
-            assets/images/travel-medium.png 322w, assets/images/travel-medium-hi-dpi.png 644w,
-            assets/images/travel-large.png 558w, assets/images/travel-large-hi-dpi.png 1116w," 
-            alt="image of travel website"></a>
+            <img class="composition__photo composition__photo--p1" srcset="assets/images/custom-grid-medium.png 200w, assets/images/custom-grid-medium-hi-dpi.png 400w,
+                        assets/images/custom-grid.png 347w, assets/images/custom-grid-hi-dpi.png 694w," alt="image of travel website build with custom grid">
+          </a>
+          <a href="http://noidesign.space/advance-css/" target="_blank">
+            <img class="composition__photo composition__photo--p2" srcset="assets/images/adv-css-medium.png 200w, assets/images/adv-css-medium-hi-dpi.png 400w,
+                      assets/images/adv-css.png 348w, assets/images/adv-css-hi-dpi.png 696w" alt="image of travel website build with flexbox">
+          </a>
+          <a href="http://noidesign.space/css-grid/" target="_blank">
+            <img class="composition__photo composition__photo--p3" srcset="assets/images/css-grid-medium.png 200w, assets/images/css-grid-medium-hi-dpi.png 400w,
+                      assets/images/css-grid.png 348w, assets/images/css-grid-hi-dpi.png 696w" alt="image of real estate website build with css-grid">
+          </a>
         </div>
         <div class="project-item__content  row__large-10__text--right row--t-padding">
-          <h4 class="project-item__title">Travel</h4>
+          <h4 class="project-item__title">Custom-grid, CSS-grid, and Flexbox </h4>
           <p class="project-item__details row__b-margin-until-medium">
-              Mobile first and responsive website for fast loading time, ideal for SEO.
+              Mobile first and responsive website for fast loading, ideal for SEO.
             <ul>
               <li><span class="project-item__subtitle">Deliverable:</span> 
                 Web application feature</li>
@@ -132,15 +139,15 @@
               <li><span class="project-item__subtitle">Methods:</span></li>
                 <ul>
                   <li><span class="project-item__subtitle--details">Build:</span> 
-                    Node.js, Gulp.js</li>
-                  <li><span class="project-item__subtitle--details">Grid System:</span> 
-                    Custom Grid System and BEM Methodology</li>
+                    Node.js, Gulp.js, Custom grid, CSS-grid, Flexbox</li>
+                  <li><span class="project-item__subtitle--details">Reusable Components:</span> 
+                    BEM&mdash;Block Element Modifier and SASS</li>
                   <li><span class="project-item__subtitle--details">Compress javascript:</span> 
                     Web Pack</li>
                   <li><span class="project-item__subtitle--details">Compress images and CSS:</span> 
                     Gulp libraries</li>
                   <li><span class="project-item__subtitle--details">Deploy:</span> 
-                    GitHub Pages Hosting Service</li>
+                    GitHub Pages and Web Hosting Service</li>
                 </ul>
           </ul>
         </p>
@@ -150,7 +157,7 @@
 
   <div class="row row--gutters-project">
       <!-- <div class="row__large-10"> -->
-        <div class="composition row__large-10__image--right">
+        <div class="composition row__large-10__image--left">
             <a href="http://noisinnang.space/code_school/" target="_blank">
             <img class="composition__photo composition__photo--p1" 
               srcset=
@@ -169,7 +176,7 @@
             assets/images/my-work-large.png 348w, assets/images/my-work-large-hi-dpi.png 696w" 
             alt="image of code school website"></a>
         </div>
-        <div class="project-item__content  row__large-10__text--left row--t-padding">
+        <div class="project-item__content  row__large-10__text--right row--t-padding">
           <h4 class="project-item__title">Multiple Bootstrap Websites</h4>
           <p class="project-item__details row__b-margin-until-medium">
               Responsive websites build with Bootstrap 3 and 4.
@@ -183,6 +190,8 @@
                   <li><span class="project-item__subtitle--details">Build:</span> Bootstrap 3 and 4 and SASS</li>
                   <li><span class="project-item__subtitle--details">Deploy:</span> 
                     Web Hosting Service</li>
+                  <li><span class="project-item__subtitle--details"></span></li>
+                  <li><span class="project-item__subtitle--details"></span></li>
                 </ul>
             </ul>
           </p>
@@ -212,7 +221,7 @@
         <div class="project-item__content row__large-10__text--right row--t-padding">
           <h4 class="project-item__title">Graphics </h4>
           <p class="project-item__details row__b-margin-until-medium">
-              Animated .svg file using CSS3 animation properties.
+              Animated .svg images using CSS3 animation properties.
             <ul>
               <li><span class="project-item__subtitle">Deliverable:</span> 
                 Web application feature</li>
@@ -246,13 +255,17 @@
             <!-- <img class="about__icon" src="assets/images/icons/dot-4.svg" alt="flower icon"> -->
             I love to learn new things and I always enjoy the process of seeing a project come together.  I possess a strong and flexible foundation in website development which facilitates building, modifying and customizing adaptable websites as new needs evolve.  I am a web development online tutorial addict.</p>
 
-      <p class="about about__details">
-          <a class="about about__details about__link" href="https://www.linkedin.com/in/noi-sinnang/" target="_blank"><strong>Linkedin</strong></a>
-      </p>
+      <div class="about about__detail">
+        <a class="about about__detail about__link" href="https://www.linkedin.com/in/noi-sinnang/" target="_blank"><strong>Linkedin</strong></a>
 
-      <p class="about about__details">
-          <a class="about about__details about__link" href="mailto:noi.patsin@gmai.com" target="_blank"><strong>noi.patsin@gmail.com</strong></a>
-      </p>
+        <a class="about about__detail about__link" href="https://github.com/Noi-Git?tab=repositories" target="_blank">
+          <strong>GitHub</strong>
+        </a>
+
+        <a class="about about__detail about__link" href="mailto:noi.patsin@gmai.com" target="_blank">
+          <strong>Email</strong></a>
+
+      </div>
     </div>
     <!-- </div> -->
     </div>
