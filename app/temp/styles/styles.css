@@ -657,7 +657,7 @@ body {
 @media (min-width: 1010px) {
 
 .large-hero__subtitle {
-      font-size: 4.0rem;
+      font-size: 3.6rem;
       letter-spacing: .6rem
   }
   }
@@ -873,6 +873,25 @@ h4 {
 
 @media (min-width: 1010px) {
 
+.row {
+/* 
+        &__large-6 {
+            float: left;
+            width: 50%
+        }
+
+        &__large-8 {
+            float: left;
+            width: 66.66%;
+        }
+
+        &__large-8--smaller {
+            widows: 63%;
+        } */
+
+
+}
+
         .row__b-margin-until-large {
             margin-bottom: 0;
         }
@@ -885,20 +904,6 @@ h4 {
             .row__large-4--larger {
                 widows: 37%;
             }
-
-        .row__large-6 {
-            float: left;
-            width: 50%
-        }
-
-        .row__large-8 {
-            float: left;
-            width: 66.66%;
-        }
-
-        .row__large-8--smaller {
-            widows: 63%;
-        }
 
         .row__large-10 {
             float: none;
@@ -917,7 +922,7 @@ h4 {
 
             .row__large-10__image--left {
                 float: left;
-                width: 36%;
+                width: 38%;
             }
 
             .row__large-10__text--right {
@@ -988,7 +993,7 @@ h4 {
 @media (min-width: 530px) {
 
 .section-title {
-      font-size: 3.75rem;
+      font-size: 3.5rem;
       margin-top: 4rem
 
 }
@@ -1110,7 +1115,8 @@ h4 {
 @media (min-width: 800px) {
 
 .project-item__image {
-            width: 100%
+            width: 100%;
+            padding-top: 2rem
     }
   }
 
@@ -1126,7 +1132,15 @@ h4 {
 @media (min-width: 530px) {
 
 .project-item__title {
-            font-size: 2.5rem
+            font-size: 2.1rem;
+            padding-top: 3rem
+    }
+  }
+
+@media (min-width: 800px) {
+
+.project-item__title {
+            padding-top: 0
     }
   }
 
@@ -1159,15 +1173,12 @@ h4 {
 .project-item__details {
     margin-bottom: .8rem;
     text-align: left;
-    }
 
-@media (min-width: 530px) {
-
-.project-item__details {
+        /* @mixin atSmall { */
             /* font-size: 2.8rem; */
             /* padding: 0 2rem; */
+        /* } */
     }
-  }
 
 .project-item__icon {
         display: block;
@@ -1262,18 +1273,18 @@ h4 {
 @media (min-width: 1010px) {
 
 .composition__photo {
-        width: 65%
+        width: 60%
   }
         .composition__photo--p1 {
-            left: 0;
-            top: -2rem;
+            left: 0rem;
+            top: 0;
         }
         .composition__photo--p2 {
             right: 0;
-            top: 2rem;
+            top: 3rem;
         }
         .composition__photo--p3 {
-            left: 2rem;
+            left: 6rem;
             top: 10rem;
         }
   }
@@ -1489,152 +1500,7 @@ h4 {
     background-color: #74BFCA;
   }
 
-#sushi {
-	margin-top: 20%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
-}
-
-/* ==== SVG ANIMATION ==== */
-
-#mat {
-	animation: pop 6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	-webkit-animation: pop 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	-webkit-animation-fill-mode: forwards;
-}
-
-/*Keyframes*/
-
-@-webkit-keyframes pop_b {
-	0% {-webkit-transform:scale(.2); -webkit-transform:rotate(27deg); opacity: 0;}
-	100% {-webkit-transform:scale(1); -webkit-transform:rotate(0deg); opacity: 100%;}
-}
-
-@-webkit-keyframes pop {
-	0% {-webkit-transform:scale(.7); -webkit-transform:rotate(7deg); opacity: 0;}
-	100% {-webkit-transform:scale(1); -webkit-transform:rotate(0deg); opacity: 100%;}
-}
-
-#table {
-	animation: pop 6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	-webkit-animation: pop 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	-webkit-animation-fill-mode: forwards;
-}
-
-/*Keyframes*/
-
-@-webkit-keyframes pop_b {
-	0% {-webkit-transform:scale(.2); -webkit-transform:rotate(27deg); opacity: 0;}
-	100% {-webkit-transform:scale(1); -webkit-transform:rotate(0deg); opacity: 100%;}
-}
-
-@-webkit-keyframes pop {
-	0% {-webkit-transform:scale(.7); -webkit-transform:rotate(7deg); opacity: 0;}
-	100% {-webkit-transform:scale(1); -webkit-transform:rotate(0deg); opacity: 100%;}
-}
-
-/* rice-rolls */
-
-#rice-rolls {
-	animation-delay:.1s;
-	-webkit-animation-delay:1s;
-	-webkit-animation: sushi-rolls 4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	        animation: sushi-rolls 4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-@-webkit-keyframes sushi-rolls {
-    0% { opacity: 0; }
-	100% { opacity: 100%; }
-}
-
-@keyframes sushi-rolls {
-    0% { opacity: 0; }
-	100% { opacity: 100%; }
-}
-
-/* bowl */
-
-#bowl {
-	animation-delay:.2s;
-	-webkit-animation-delay:1s;
-	-webkit-animation: bowl 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	        animation: bowl 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-@-webkit-keyframes bowl {
-    0% { opacity: 0; }
-	100% { opacity: 100%; }
-}
-
-@keyframes bowl {
-    0% { opacity: 0; }
-	100% { opacity: 100%; }
-}
-
-/* green-vegi */
-
-#green-vegi {
-	animation-delay:.8s;
-	-webkit-animation-delay:1s;
-	-webkit-animation: green-vegi 5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	        animation: green-vegi 5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-@-webkit-keyframes green-vegi {
-    0% { opacity: 0; }
-	100% { opacity: 100%; }
-}
-
-@keyframes green-vegi {
-    0% { opacity: 0; }
-	100% { opacity: 100%; }
-}
-
-/* brown-salmon */
-
-#brown-salmon {
-	animation-delay:1s;
-	-webkit-animation-delay:1s;
-	-webkit-animation: green-vegi 8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	        animation: green-vegi 8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-@-webkit-keyframes brown-salmon {
-    0% { opacity: 0; }
-	100% { opacity: 100%; }
-}
-
-@keyframes brown-salmon {
-    0% { opacity: 0; }
-	100% { opacity: 100%; }
-}
-
-#special {
-	animation: special 6s cubic-bezier(0.68, 0.55, 0.265, 1.55);
-	-webkit-animation: special 5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	-webkit-animation-fill-mode: forwards;
-}
-
-/*Keyframes*/
-
-@-webkit-keyframes special {
-	0% {-webkit-transform:scale(.2); -webkit-transform:rotate(27deg); opacity: 0;}
-	100% {-webkit-transform:scale(1); -webkit-transform:rotate(0deg); opacity: 100%;}
-}
-
-#chopsticks {
-	animation: chopsticks 6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	-webkit-animation: chopsticks 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	-webkit-animation-fill-mode: forwards;
-}
-
-/*Keyframes*/
-
-@-webkit-keyframes chopsticks {
-	0% {-webkit-transform:scale(.2); -webkit-transform:rotate(27deg); opacity: 0;}
-	100% {-webkit-transform:scale(1); -webkit-transform:rotate(0deg); opacity: 100%;}
-}
+/* @import "modules/_sushi"; */
 
 #trees {
   margin-top: 1%;

@@ -4,7 +4,7 @@
   margin-top: 5rem;
 
   @mixin atSmall {
-      font-size: 3.75rem;
+      font-size: 3.5rem;
       margin-top: 4rem;
   }
 

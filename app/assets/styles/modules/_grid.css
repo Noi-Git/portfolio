@@ -120,7 +120,7 @@
                 widows: 37%;
             }
         }
-
+/* 
         &__large-6 {
             float: left;
             width: 50%
@@ -133,7 +133,7 @@
 
         &__large-8--smaller {
             widows: 63%;
-        }
+        } */
 
         &__large-10 {
             float: none;
@@ -151,7 +151,7 @@
 
             &__image--left {
                 float: left;
-                width: 36%;
+                width: 38%;
             }
 
             &__text--right {
